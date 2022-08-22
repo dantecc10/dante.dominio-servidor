@@ -10,7 +10,10 @@
 
 <body>
     <form>
-        <input type="emailUsuario">
+        <p>
+            <label for="usuario"></label>
+            <input type="emailUsuario" name="usuario">
+        </p>
         <input type="contraseña">
     </form>
 </body>
