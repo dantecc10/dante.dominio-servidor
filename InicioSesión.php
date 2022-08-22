@@ -1,5 +1,5 @@
 <?php
-include 'ConexiónUsuarios.php';
+include 'Scripts PHP/ConexiónUsuarios.php';
 echo "Hola";
 $sql = "SELECT * FROM usuarios";
 //$result = mysqli_query($conn, $sql);
