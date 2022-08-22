@@ -15,6 +15,9 @@
     $sql = "SELECT * FROM usuarios";
     //$result = mysqli_query($conn, $sql);
     $result = mysqli_query($conn, $sql) or die("Error en la consulta a la base de datos");
+    echo ("<p>Usuario o correo: " . $_POST['emailUsuario'] . "</p>");
+    echo ("<p>Contraseña: " . $_POST['contraseña'] . "</p>");
+
 
     while ($columna = mysqli_fetch_array($result)) {
         if (($_POST['emailUsuario'] == $columna['nombreUsuario'] || $_POST['emailUsuario'] == $columna['email']) && ($_POST['contraseña'] == $columna['contraseña'])) {
@@ -23,7 +26,6 @@
             echo "Revisa eso último...";
         }
     }
-
     mysqli_close($conn);
     ?>
 </body>
