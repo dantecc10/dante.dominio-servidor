@@ -1,15 +1,31 @@
-<?php
-include 'Scripts PHP/ConexiónUsuarios.php';
-echo "Hola";
-$sql = "SELECT * FROM usuarios";
-//$result = mysqli_query($conn, $sql);
-$result = mysqli_query($conn, $sql) or die("Error en la consulta a la base de datos");
+<!DOCTYPE html>
+<html lang="en">
 
-while ($columna = mysqli_fetch_array($result)) {
-    echo "<p>ID de usuario: " . $columna['ID'] . "</p>";
-    echo "<p>Nombre de usuario: " . $columna['nombreUsuario'] . "</p>";
-    echo "<p>Email de usuario: " . $columna['email'] . "</p>";
-    echo "<p>Contraseña de usuario: " . $columna['contraseña'] . "</p>";
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-mysqli_close($conn);
+<body>
+    <?php
+    include 'Scripts PHP/ConexiónUsuarios.php';
+
+    $sql = "SELECT * FROM usuarios";
+    //$result = mysqli_query($conn, $sql);
+    $result = mysqli_query($conn, $sql) or die("Error en la consulta a la base de datos");
+
+    while ($columna = mysqli_fetch_array($result)) {
+        if (($_POST['emailUsuario'] == $columna['nombreUsuario'] || $_POST['emailUsuario'] == $columna['email']) && ($_POST['contraseña'] == $columna['contraseña'])) {
+            echo "Lo lograste, el inicio es correcto";
+        } else {
+            echo "Revisa eso último...";
+        }
+    }
+
+    mysqli_close($conn);
+    ?>
+</body>
+
+</html>
