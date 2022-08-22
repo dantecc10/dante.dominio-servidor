@@ -11,10 +11,13 @@
 <body>
     <form>
         <p>
-            <label for="usuario"></label>
+            <label for="usuario">Usuario o email: </label>
             <input type="emailUsuario" name="usuario">
         </p>
-        <input type="contraseña">
+        <p>
+            <label for="usuario">Contraseña: </label>
+            <input type="contraseña">
+        </p>
     </form>
 </body>
 
