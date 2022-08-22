@@ -10,7 +10,8 @@
 
 <body>
     <form>
-
+        <input type="emailUsuario">
+        <input type="contraseña">
     </form>
 </body>
 
