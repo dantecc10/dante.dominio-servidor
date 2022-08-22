@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form>
+    <form action="InicioSesión.php" method="$_POST">
         <p>
             <label for="usuario">Usuario o email:</label>
             <input type="emailUsuario" name="usuario">
@@ -18,7 +18,7 @@
             <label for="usuario">Contraseña:</label>
             <input type="contraseña">
         </p>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" name="BotónEnviar">
     </form>
 </body>
 
