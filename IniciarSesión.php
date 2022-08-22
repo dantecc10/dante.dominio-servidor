@@ -18,6 +18,7 @@
             <label for="usuario">Contraseña:</label>
             <input type="contraseña">
         </p>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 
