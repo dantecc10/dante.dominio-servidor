@@ -11,11 +11,11 @@
 <body>
     <form action="InicioSesión.php" method="$_POST">
         <p>
-            <label for="usuario">Usuario o email:</label>
-            <input type="emailUsuario" name="usuario" required>
+            <label for="emailUsuario">Usuario o email:</label>
+            <input type="email" name="emailUsuario" required>
         </p>
         <p>
-            <label for="usuario">Contraseña:</label>
+            <label for="contraseña">Contraseña:</label>
             <input type="password" name="contraseña" required>
         </p>
         <input type="submit" value="Enviar" name="BotónEnviar">
