@@ -22,9 +22,10 @@
     while ($columna = mysqli_fetch_array($result)) {
         if (($_GET['email'] == $columna['email']) && ($_GET['contraseña'] == $columna['contraseña'])) {
             $resultadoSesión = ("Bienvenido, " . $columna["nombreUsuario"] . ", has iniciado sesión correctamente.");
-            echo $resultadoSesión;
+            // echo $resultadoSesión;
+
             $Acceso = True;
-            header('Location: ACADÉMICO/ESCOLAR/Tareas.php');
+            header('Location: ACADÉMICO/ESCOLAR/Tareas.php?Sesión=Iniciada');
         } else {
             $resultadoSesión = "Los datos que introduciste son erróneos.";
             $Acceso = False;
@@ -32,10 +33,6 @@
         }
     }
     mysqli_close($conn);
-    if ($Acceso == True) {
-        header('Location: Tareas.php');
-    }
-
     ?>
 </body>
 
