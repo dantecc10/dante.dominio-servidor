@@ -33,7 +33,7 @@
     }
     mysqli_close($conn);
     if ($Acceso == True) {
-        header('Location: /ACADÉMICO/ESCOLAR/Tareas.php');
+        header('Location: Tareas.php');
     }
 
     ?>
