@@ -18,7 +18,7 @@
     echo ("<p>Usuario o correo: " . $_GET['emailUsuario'] . "</p>");
     echo ("<p>Contraseña: " . $_GET['contraseña'] . "</p>");
 
-    if ($columna = mysqli_fetch_array($result)) {
+    while ($columna = mysqli_fetch_array($result)) {
         if (($_GET['emailUsuario'] == $columna['nombreUsuario'] || $_GET['emailUsuario'] == $columna['email']) && ($_GET['contraseña'] == $columna['contraseña'])) {
             $resultadoSesión = ("Bienvenido, " . $columna["nombreUsuario"] . ", has iniciado sesión correctamente.");
             echo $resultadoSesión;
