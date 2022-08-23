@@ -35,7 +35,7 @@
     if ($Acceso == True) {
         header('Location: /ACADÉMICO/ESCOLAR/Tareas.php');
     }
-    
+
     ?>
 </body>
 
