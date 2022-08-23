@@ -11,6 +11,7 @@
 <body>
     <?php
     echo "<p>Esta es mi tarea</p>";
+    echo $_POST['Sesión'];
     ?>
 </body>
 
