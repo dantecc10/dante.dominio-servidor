@@ -10,6 +10,7 @@
 
 <body>
     <?php
+    $Acceso;
     include 'Scripts PHP/ConexiónUsuarios.php';
 
     $sql = "SELECT * FROM usuarios";
@@ -31,6 +32,10 @@
         }
     }
     mysqli_close($conn);
+    if ($Acceso == True) {
+        header('Location: /ACADÉMICO/ESCOLAR/Tareas.php');
+    }
+    
     ?>
 </body>
 
