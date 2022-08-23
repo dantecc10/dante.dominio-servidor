@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="InicioSesión.php" method="$_POST">
+    <form action="InicioSesión.php" method="$_GET">
         <p>
             <label for="emailUsuario">Usuario o email:</label>
             <input type="email" name="emailUsuario" required>
