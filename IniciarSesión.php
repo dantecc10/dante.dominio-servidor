@@ -10,6 +10,7 @@
 
 <body>
     <?php
+    $hack = False;
     ?>
     <form action="InicioSesión.php" method="$_GET">
         <p>
