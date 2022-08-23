@@ -24,7 +24,7 @@
             $resultadoSesión = ("Bienvenido, " . $columna["nombreUsuario"] . ", has iniciado sesión correctamente.");
             echo $resultadoSesión;
             $Acceso = True;
-            // header('Location: Consulta.php');
+            header('Location: ACADÉMICO\ESCOLAR\Tareas.php');
         } else {
             $resultadoSesión = "Los datos que introduciste son erróneos.";
             $Acceso = False;
