@@ -18,12 +18,16 @@
     echo ("<p>Usuario o correo: " . $_POST['emailUsuario'] . "</p>");
     echo ("<p>Contraseña: " . $_POST['contraseña'] . "</p>");
 
-
-    while ($columna = mysqli_fetch_array($result)) {
+    if ($columna = mysqli_fetch_array($result)) {
         if (($_POST['emailUsuario'] == $columna['nombreUsuario'] || $_POST['emailUsuario'] == $columna['email']) && ($_POST['contraseña'] == $columna['contraseña'])) {
-            echo "Lo lograste, el inicio es correcto";
+            $resultadoSesión = ("Bienvenido, " . $columna["nombreUsuario"] . ", has iniciado sesión correctamente.");
+            echo $resultadoSesión;
+            $Acceso = True;
+            header('Location: Consulta.php');
         } else {
-            echo "Revisa eso último...";
+            $resultadoSesión = "Los datos que introduciste son erróneos.";
+            $Acceso = False;
+            echo $resultadoSesión;
         }
     }
     mysqli_close($conn);
