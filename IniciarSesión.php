@@ -11,8 +11,8 @@
 <body>
     <form action="InicioSesión.php" method="$_GET">
         <p>
-            <label for="emailUsuario">Usuario o email:</label>
-            <input type="email" name="emailUsuario" required>
+            <label for="email">Usuario o email:</label>
+            <input type="email" name="email" required>
         </p>
         <p>
             <label for="contraseña">Contraseña:</label>
