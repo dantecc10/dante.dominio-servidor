@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <?php
+    ?>
     <form action="InicioSesión.php" method="$_GET">
         <p>
             <label for="email">Usuario o email:</label>

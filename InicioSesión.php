@@ -15,8 +15,8 @@
     $sql = "SELECT * FROM usuarios";
     //$result = mysqli_query($conn, $sql);
     $result = mysqli_query($conn, $sql) or die("Error en la consulta a la base de datos");
-    echo ("<p>Usuario o correo: " . $_GET['email'] . "</p>");
-    echo ("<p>Contraseña: " . $_GET['contraseña'] . "</p>");
+    // echo ("<p>Usuario o correo: " . $_GET['email'] . "</p>");
+    // echo ("<p>Contraseña: " . $_GET['contraseña'] . "</p>");
 
     while ($columna = mysqli_fetch_array($result)) {
         if (($_GET['email'] == $columna['email']) && ($_GET['contraseña'] == $columna['contraseña'])) {
@@ -27,7 +27,7 @@
         } else {
             $resultadoSesión = "Los datos que introduciste son erróneos.";
             $Acceso = False;
-            echo $resultadoSesión;
+            // echo $resultadoSesión;
         }
     }
     mysqli_close($conn);
