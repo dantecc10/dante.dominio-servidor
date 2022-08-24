@@ -36,10 +36,10 @@
         <div id="Encabezado-Inferior"></div>
     </header>
 
-    <h2 id="IndicaArtículos">En construcción...</h2>
+    <h2 id="IndicaArtículos">Mi página de inicio</h2>
     <div class="Contenedor-Artículos" id="PartidosPolíticos">
         <h4 class="Autor-Artículo">Por Dante Castelán Carpinteyro.</h4>
-        <h3 class="TítuloArtículo">Mi página de inicio</h3>
+        <h3 class="TítuloArtículo">En construcción...</h3>
         <p class="Descripción-Artículo">Pronto actualizaré el código de index... paciencia</p>
     </div>
 </body>
