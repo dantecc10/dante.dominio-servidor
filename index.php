@@ -20,12 +20,12 @@
     <header id="Encabezado">
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
-                <h1>CC.club</h1> <a href="index.php"> <img id="Logo" src="../IMG/FAVICON.PNG" alt="dante.castelancarpinteyro.club">
+                <h1>Inicio</h1> <a href="index.php"> <img id="Logo" src="../IMG/FAVICON.PNG" alt="dante.castelancarpinteyro.club">
                 </a>
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
-                        <a href="IniciarSesión.php">IniciarSesión</a>
-                        <a href="">POLITIZA MX</a>
+                        <a href="IniciarSesión.php">Iniciar Sesión</a>
+                        <a href="politiza.castelancarpinteyro.club">POLITIZA MX</a>
                         <a href="AcercaDe.php">Acerca de...</a>
                         <a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
                     </div>
@@ -36,11 +36,12 @@
         <div id="Encabezado-Inferior"></div>
     </header>
 
-
-    <h1>Inicio</h1>
-    <h2>En construcción...</h2>
-    <p>Pronto actualizaré el código de index... paciencia</p>
-    <p align="left">- Dante Castelán Carpinteyro</p>
+    <h2 id="IndicaArtículos">En construcción...</h2>
+    <div class="Contenedor-Artículos" id="PartidosPolíticos">
+        <h4 class="Autor-Artículo">Por Dante Castelán Carpinteyro.</h4>
+        <h3 class="TítuloArtículo">Mi página de inicio</h3>
+        <p class="Descripción-Artículo">Pronto actualizaré el código de index... paciencia</p>
+    </div>
 </body>
 
 </html>
