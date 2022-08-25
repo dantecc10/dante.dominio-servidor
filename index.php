@@ -40,7 +40,7 @@
     <div class="Contenedor-Artículos" id="PartidosPolíticos">
         <h4 class="Autor-Artículo">Por Dante Castelán Carpinteyro.</h4>
         <h3 class="TítuloArtículo">En construcción...</h3>
-        <p class="Descripción-Artículo">Pronto actualizaré el código de index; paciencia Y)...</p>
+        <p class="Descripción-Artículo">Pronto actualizaré el código de index; paciencia...</p>
     </div>
     <footer>
         <div id="RedesSociales" align="center">
