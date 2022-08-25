@@ -25,7 +25,7 @@
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
                         <a href="IniciarSesión.php">Iniciar Sesión</a>
-                        <a href="politiza.castelancarpinteyro.club">POLITIZA MX</a>
+                        <a href="https://politiza.castelancarpinteyro.club/">POLITIZA MX</a>
                         <a href="AcercaDe.php">Acerca de...</a>
                         <a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
                     </div>
@@ -40,7 +40,7 @@
     <div class="Contenedor-Artículos" id="PartidosPolíticos">
         <h4 class="Autor-Artículo">Por Dante Castelán Carpinteyro.</h4>
         <h3 class="TítuloArtículo">En construcción...</h3>
-        <p class="Descripción-Artículo">Pronto actualizaré el código de index... paciencia</p>
+        <p class="Descripción-Artículo">Pronto actualizaré el código de index; paciencia Y)...</p>
     </div>
     <footer>
         <div id="RedesSociales" align="center">
