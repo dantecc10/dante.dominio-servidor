@@ -37,11 +37,14 @@
         <div id="Encabezado-Inferior"></div>
     </header>
 
-    <h2 id="IndicaArtículos">Mi página de inicio</h2>
+    <h2 id="IndicaArtículos">Programas avanzados para PC</h2>
     <div class="Contenedor-Artículos" id="PartidosPolíticos">
         <h4 class="Autor-Artículo">Por Dante Castelán Carpinteyro.</h4>
-        <h3 class="TítuloArtículo">En construcción...</h3>
-        <p class="Descripción-Artículo">Pronto actualizaré el código de index; paciencia.</p>
+        <h3 class="TítuloArtículo">Enlace</h3>
+        <p class="Descripción-Artículo"><a href="https://cecytepuebla-my.sharepoint.com/:f:/g/personal/d_castelanc_chg_2023_cecytepuebla_edu_mx/EoedF8GQeyNGoTTH1EWFB5AB0rqQpaGqu46cCw0DXzs94w?e=uVhPUT" target="_blank" rel="noopener noreferrer">
+                Enlace directo a la carpeta.
+            </a>
+        </p>
     </div>
     <footer>
         <div id="RedesSociales" align="center">
