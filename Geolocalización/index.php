@@ -51,7 +51,6 @@ if (isset($_POST['submit'])) {
             document.querySelector('.myForm input[name = "latitude"]').value = position.coords.latitude;
             document.querySelector('.myForm input[name = "longitude"]').value = position.coords.longitude;
         }
-
         function showError(errror) {
             switch (error.code) {
                 case error.PERMISSION_DENIED:

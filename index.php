@@ -41,7 +41,11 @@
     <div class="Contenedor-Artículos" id="PartidosPolíticos">
         <h4 class="Autor-Artículo">Por Dante Castelán Carpinteyro.</h4>
         <h3 class="TítuloArtículo">En construcción...</h3>
-        <p class="Descripción-Artículo">Pronto actualizaré el código de index; paciencia.</p>
+        <p class="Descripción-Artículo">Pronto actualizaré el código de index; paciencia. Tu IP pública es
+            <?php
+            echo ($_SERVER['REMOTE_ADDR']);
+            ?>.
+        </p>
     </div>
     <footer>
         <div id="RedesSociales" align="center">
