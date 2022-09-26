@@ -1,6 +1,6 @@
 <?php
 ini_set('display_errors', 1);
-error_reporting(E_ALL);
+error_reporting( E_ALL );
 $from = "dante@castelancarpinteyro.club";
 $to = "dantecc10@gmail.com";
 $subject = "Checking PHP mail";
