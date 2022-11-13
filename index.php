@@ -2,8 +2,8 @@
 <html lang="es">
 
 <head>
-    <link rel="shortcut icon" href="../IMG/FAVICON TRANSPARENTE.png" type="image/x-icon">
-    <link id="EtiquetaCSS" rel="Stylesheet" href="../CSS/CSS GLOBAL - TEMA OSCURO.css" Type="text/css" MEDIA="screen">
+    <link rel="shortcut icon" href="IMG/DanteDEV-Black-Blackground.png" type="image/x-icon">
+    <link id="EtiquetaCSS" rel="Stylesheet" href="CSS/CSS GLOBAL - TEMA OSCURO.css" Type="text/css" MEDIA="screen">
     <!--<link id="Oculta/Muestra" rel="Stylesheet" href="../CSS/CSS OCULTAMIENTO.css" Type="text/css" MEDIA="screen">-->
 
     <meta name="description" content="Dante Castelán Carpinteyro: Web dedicada a publicación de proyectos y código personal.">
@@ -20,7 +20,7 @@
     <header id="Encabezado">
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
-                <h1>Inicio</h1> <a href="index.php"> <img id="Logo" src="../IMG/FAVICON.PNG" alt="dante.castelancarpinteyro.club">
+                <h1>Inicio</h1> <a href="index.php"> <img id="Logo" src="IMG/DanteDEV.pong" alt="dante.castelancarpinteyro.club">
                 </a>
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
