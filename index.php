@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <link rel="shortcut icon" href="IMG/DanteDEV-Black-Blackground.png" type="image/x-icon">
+    <link rel="shortcut icon" href="IMG/DanteDEV.png" type="image/x-icon">
     <link id="EtiquetaCSS" rel="Stylesheet" href="CSS/CSS GLOBAL - TEMA OSCURO.css" Type="text/css" MEDIA="screen">
     <!--<link id="Oculta/Muestra" rel="Stylesheet" href="../CSS/CSS OCULTAMIENTO.css" Type="text/css" MEDIA="screen">-->
 
@@ -20,7 +20,7 @@
     <header id="Encabezado">
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
-                <h1>Inicio</h1> <a href="index.php"> <img id="Logo" src="IMG/DanteDEV.png" alt="dante.castelancarpinteyro.club">
+                <h1>Inicio</h1> <a href="index.php"> <img id="Logo" src="IMG/DanteDEV-Black-Background.png" alt="dante.castelancarpinteyro.club">
                 </a>
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
