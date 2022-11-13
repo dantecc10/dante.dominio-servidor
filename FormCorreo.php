@@ -1,53 +1,47 @@
 <?php
-
+//Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
+//Load Composer's autoloader
 require 'vendor/autoload.php';
-$mail = new PHPMailer;
-$mail->isSMTP();
-$mail->Host = 'smtp.hostinger.com';
-$mail->Port = 587;
-$mail->SMTPAuth = true;
-$mail->Username = 'test@hostinger-tutorials.com';
-$mail->Password = 'EMAIL_ACCOUNT_PASSWORD';
-$mail->setFrom('test@hostinger-tutorials.com', 'Mr. Drago');
-$mail->addAddress('example@gmail.com', 'Receiver Name');
-if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
-    $mail->Subject = 'PHPMailer contact form';
-    $mail->isHTML(false);
-    $mail->Body = <<<EOT
-Email: {$_POST['email']}
-Name: {$_POST['name']}
-Message: {$_POST['message']}
-EOT;
-    if (!$mail->send()) {
-        $msg = 'Sorry, something went wrong. Please try again later.';
-    } else {
-        $msg = 'Message sent! Thanks for contacting us.';
-    }
-} else {
-    $msg = 'Share it with us!';
+
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
+
+try {
+    //Server settings
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = 'smtp.example.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail->Username   = 'user@example.com';                     //SMTP username
+    $mail->Password   = 'secret';                               //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+    //Recipients
+    $mail->setFrom('from@example.com', 'Mailer');
+    $mail->addAddress('joe@example.net', 'Joe User');     //Add a recipient
+    $mail->addAddress('ellen@example.com');               //Name is optional
+    $mail->addReplyTo('info@example.com', 'Information');
+    $mail->addCC('cc@example.com');
+    $mail->addBCC('bcc@example.com');
+
+    //Attachments
+    $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = 'Here is the subject';
+    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    $mail->send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Contact form</title>
-</head>
-
-<body>
-    <h1>Do You Have Anything in Mind?</h1>
-    <?php if (!empty($msg)) {
-        echo "<h2>$msg</h2>";
-    } ?>
-    <form method="POST">
-        <label for="name">Name: <input type="text" name="name" id="name"></label><br><br>
-        <label for="email">Email: <input type="email" name="email" id="email"></label><br><br>
-        <label for="message">Message: <textarea name="message" id="message" rows="8" cols="20"></textarea></label><br><br>
-        <input type="submit" value="Send">
-    </form>
-</body>
-
-</html>

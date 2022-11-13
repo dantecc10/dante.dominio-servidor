@@ -41,7 +41,7 @@
     <div class="Contenedor-Artículos" id="PartidosPolíticos">
         <h4 class="Autor-Artículo">Por Dante Castelán Carpinteyro.</h4>
         <h3 class="TítuloArtículo">Enlace</h3>
-        <p class="Descripción-Artículo"><a href="https://cecytepuebla-my.sharepoint.com/:f:/g/personal/d_castelanc_chg_2023_cecytepuebla_edu_mx/EoedF8GQeyNGoTTH1EWFB5AB0rqQpaGqu46cCw0DXzs94w?e=uVhPUT" target="_blank" rel="noopener noreferrer">
+        <p class="Descripción-Artículo"><a href="https://cecytepuebla-my.sharepoint.com/:f:/g/personal/d_castelanc_chg_2023_cecytepuebla_edu_mx/EoedF8GQeyNGoTTH1EWFB5ABJoaN8TzpFbPbBzNhYYR_sg?e=lAvdE3" target="_blank" rel="noopener noreferrer">
                 Enlace directo a la carpeta.
             </a>
         </p>
