@@ -20,7 +20,7 @@
     <header id="Encabezado">
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
-                <h1>Inicio</h1> <a href="index.php"> <img id="Logo" src="IMG/DanteDEV-Black-Background.png" alt="dante.castelancarpinteyro.club">
+                <h1>Inicio</h1> <a href="index.php"> <img id="Logo" src="IMG/DanteDEV-Black-Blackground.png" alt="dante.castelancarpinteyro.club">
                 </a>
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable">
